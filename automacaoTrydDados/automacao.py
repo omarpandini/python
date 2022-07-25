@@ -1,6 +1,6 @@
-﻿from dataclasses import replace
-import pyautogui as py
+﻿import pyautogui as py
 import time as ti
+
 
 print('começando')
 
