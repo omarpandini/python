@@ -1,62 +1,108 @@
 ﻿import pyautogui as py
 import time as ti
 
-
 print('começando')
-
 py.hotkey('alt','tab')
 
-#============  PRIMEIRO ARQUIVO =================
+def abrirMenuJanela(pathArquivo):
+    py.click(x=1546, y=430) # Abrir menu da janela
+    ti.sleep(2)
+    py.click(x=1606, y=458) # Exportar arquivo
+    py.write(pathArquivo)
+    ti.sleep(1)
 
-py.click(x=360, y=280,button='right') # Clicar com o botão direito na tela
+def salvaArquivo():
+    py.click(x=1990, y=924) # Salva o arquivo
+    ti.sleep(2)
+    py.click(x=1482, y=553) # Clica no ok
+    py.click(x=1579, y=433) # Fecha a janela de dados
 
-py.click(x=480, y=791) # Clicar em mais atalhos
 
-py.click(x=772, y=784) # Clicar em Abrir dados do gráfico
+def primeiroArquivo():
+    pathArquivo = 'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_10P.csv'
+    py.click(x=307, y=220,button='right') # Clicar com o botão direito na tela
+    py.click(x=414, y=721) # Clicar em mais atalhos
+    py.click(x=697, y=745) # Clicar em Abrir dados do gráfico
+    abrirMenuJanela(pathArquivo)
+    salvaArquivo()
+    
 
-py.click(x=1048, y=432) # Abrir menu da janela
+def segundoArquivo():
+    pathArquivo = 'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_12P.csv'
+    py.click(x=900, y=220,button='right') # Clicar com o botão direito na tela
+    py.click(x=992, y=726) # Clicar em mais atalhos
+    py.click(x=1276, y=741) # Clicar em Abrir dados do gráfico    
+    abrirMenuJanela(pathArquivo)    
+    salvaArquivo()
 
-py.click(x=1091, y=455) # Exportar arquivo
+def terceiroArquivo():
+    pathArquivo = 'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_15P.csv'
+    py.click(x=1445, y=220,button='right') # Clicar com o botão direito na tela
+    py.click(x=1571, y=723) # Clicar em mais atalhos
+    py.click(x=1879, y=745) # Clicar em Abrir dados do gráfico    
+    abrirMenuJanela(pathArquivo)    
+    salvaArquivo()
 
-pathArquivo = 'C:\\www\python\\automacaoTrydDados\\teste.csv'
+def quartoArquivo():
+    pathArquivo = 'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_20P.csv'
+    py.click(x=1975, y=220,button='right') # Clicar com o botão direito na tela
+    py.click(x=2089, y=723) # Clicar em mais atalhos
+    py.click(x=1858, y=748) # Clicar em Abrir dados do gráfico    
+    abrirMenuJanela(pathArquivo)    
+    salvaArquivo()
 
-py.write(pathArquivo)
+def quintoArquivo():
+    pathArquivo = 'C:\\wamp64\\www\\bolsaEstatistica\\WDOFUT_4P.csv'
+    py.click(x=339, y=662,button='right') # Clicar com o botão direito na tela
+    py.click(x=444, y=859) # Clicar em mais atalhos
+    py.click(x=769, y=646) # Clicar em Abrir dados do gráfico    
+    abrirMenuJanela(pathArquivo)    
+    salvaArquivo()
 
-ti.sleep(1)
+def sextoArquivo():
+    pathArquivo = 'C:\\wamp64\\www\\bolsaEstatistica\\WDOFUT_5P.csv'
+    py.click(x=874, y=662,button='right') # Clicar com o botão direito na tela
+    py.click(x=984, y=855) # Clicar em mais atalhos
+    py.click(x=1303, y=651) # Clicar em Abrir dados do gráfico    
+    abrirMenuJanela(pathArquivo)    
+    salvaArquivo()
 
-py.click(x=1621, y=919) # Salva o arquivo
+def setimoArquivo():
+    pathArquivo = 'C:\\wamp64\\www\\bolsaEstatistica\\WDOFUT_6P.csv'
+    py.click(x=1389, y=662,button='right') # Clicar com o botão direito na tela
+    py.click(x=1470, y=855) # Clicar em mais atalhos
+    py.click(x=1809, y=651) # Clicar em Abrir dados do gráfico    
+    abrirMenuJanela(pathArquivo)    
+    salvaArquivo()
 
-ti.sleep(1)
+def oitavoArquivo():
+    pathArquivo = 'C:\\wamp64\\www\\bolsaEstatistica\\WDOFUT_8P.csv'
+    py.click(x=1907, y=662,button='right') # Clicar com o botão direito na tela
+    py.click(x=2001, y=855) # Clicar em mais atalhos
+    py.click(x=2326, y=651) # Clicar em Abrir dados do gráfico    
+    abrirMenuJanela(pathArquivo)    
+    salvaArquivo()
 
-py.click(x=1160, y=562) # Clica no ok
+def importaArquivoBaseDados():
+    py.press('winleft')
+    py.write('chrome')
+    ti.sleep(1)
+    py.press('enter')
+    ti.sleep(1)
+    py.write('http://localhost/bolsaEstatistica/importaCsv.php')
+    py.press('enter')
 
-py.click(x=1079, y=434) # Fecha a janela de dados
 
-#============  SEGUNDO ARQUIVO =================
+primeiroArquivo()
+segundoArquivo()
+terceiroArquivo()
+quartoArquivo()
+quintoArquivo()
+sextoArquivo()
+setimoArquivo()
+oitavoArquivo()
+importaArquivoBaseDados()
 
-pathArquivo2 = 'C:\\www\python\\automacaoTrydDados\\teste2.csv'
 
-py.click(x=770, y=280,button='right') # Clicar com o botão direito na tela
-
-py.click(x=890, y=791) # Clicar em mais atalhos
-
-py.click(x=1182, y=784) # Clicar em Abrir dados do gráfico
-
-py.click(x=1048, y=432) # Abrir menu da janela
-
-py.click(x=1091, y=455) # Exportar arquivo
-
-py.write(pathArquivo2)
-
-ti.sleep(1)
-
-py.click(x=1621, y=919) # Salva o arquivo
-
-ti.sleep(1)
-
-py.click(x=1160, y=562) # Clica no ok
-
-py.click(x=1079, y=434) # Fecha a janela de dados
-
-ti.sleep(4)
+ti.sleep(3)
 print(py.position())
