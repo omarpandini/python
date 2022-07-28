@@ -18,7 +18,7 @@ link = 'https://drive.google.com/drive/folders/1SZg-iMX06berZWI6t69AZdkSelaSHKLi
 
 py.write(link)
 py.press('enter')
-ti.sleep(3)
+ti.sleep(10)
 print(py.position())
 py.click(x=329,y=258,clicks=2)
 ti.sleep(2)
