@@ -93,10 +93,22 @@ def exportaArquivo(nmArquivo,x,y):
     py.click(x=1580, y=433)
 
 
+def importaArquivoBaseDados():
+    py.press('winleft')
+    py.write('chrome')
+    ti.sleep(1)
+    py.press('enter')
+    ti.sleep(1)
+    py.write('http://localhost/bolsaEstatistica/importaCsv.php')
+    py.press('enter')
+    py.hotkey('ctrl','t')
+    py.write('http://localhost/bolsaEstatistica/agressaoEstatistica.php')
+    py.press('enter')
 
 #===============================  Inicia executação do Robo ===============================
 
 abreTryd()
+
 
 i=1
 for arquivo in arquivos:
@@ -114,6 +126,8 @@ for arquivo in arquivos:
         posicaoX1 += 550
 
     i+=1 
+    
+importaArquivoBaseDados()
 
 ti.sleep(3)
 print(py.position())
