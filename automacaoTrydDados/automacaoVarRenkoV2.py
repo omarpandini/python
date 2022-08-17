@@ -4,8 +4,8 @@ import time as ti
 posicaoX1 = 355
 posicaoY1 = 200
 
-arquivos = ['C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_8R.csv'
-           ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_10R.csv'
+arquivos = ['C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_24R.csv'
+           ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_26R.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_12R.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_14R.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_16R.csv'
