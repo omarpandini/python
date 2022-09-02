@@ -6,7 +6,7 @@ posicaoY1 = 200
 
 arquivos = ['C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_24R.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_26R.csv'
-           ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_12R.csv'
+           ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_28R.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_14R.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_16R.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_18R.csv'
@@ -99,7 +99,7 @@ def importaArquivoBaseDados():
     ti.sleep(1)
     py.press('enter')
     ti.sleep(1)
-    py.write('http://localhost/bolsaEstatistica/importaCsv.php')
+    py.write('http://localhost/bolsaEstatistica/importaCsvV2.php')
     py.press('enter')
     py.hotkey('ctrl','t')
     py.write('http://localhost/bolsaEstatistica/agressaoEstatistica.php')
@@ -130,7 +130,7 @@ for arquivo in arquivos:
         posicaoX1 += 550
 
     i+=1 
-    
+
 importaArquivoBaseDados()
 
 ti.sleep(3)
