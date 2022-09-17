@@ -57,7 +57,7 @@ def exportaArquivo(nmArquivo,x,y):
     i = 1
     # Acha a posição do abrir dados gráfico
     while not locationBtn:
-        locationBtn = py.locateCenterOnScreen('automacaoTrydDados/imgExportarCsv.png')
+        locationBtn = py.locateCenterOnScreen('automacaoTrydDados/imgExportarCsv3.png')
         print('não achou '+str(i))        
         i+=1  
 
@@ -71,7 +71,7 @@ def exportaArquivo(nmArquivo,x,y):
     locationBtn = ''
     i = 1
     while not locationBtn:
-        locationBtn = py.locateCenterOnScreen('automacaoTrydDados/imgBtnSalvar.png')
+        locationBtn = py.locateCenterOnScreen('automacaoTrydDados/imgBtnSalvar2.png')
         print('não achou '+str(i))        
         i+=1  
 
