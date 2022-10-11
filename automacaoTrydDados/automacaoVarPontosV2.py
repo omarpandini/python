@@ -5,8 +5,8 @@ posicaoX1 = 355
 posicaoY1 = 200
 
 arquivos = ['C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_24P.csv'
-           ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_12P.csv'
-           ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_15P.csv'
+           ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_28P.csv'
+           ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_30P.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_20P.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_14P.csv'
            ,'C:\\wamp64\\www\\bolsaEstatistica\\WINFUT_16P.csv'

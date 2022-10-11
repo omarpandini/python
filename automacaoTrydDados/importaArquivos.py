@@ -20,5 +20,5 @@ def importaArquivoBaseDados():
     py.hotkey('ctrl','t')
     py.write('http://localhost/bolsaEstatistica/agressaoEstatisticaV2.php')
     py.press('enter')
-
+ 
 importaArquivoBaseDados()
